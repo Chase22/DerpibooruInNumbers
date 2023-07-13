@@ -34,7 +34,7 @@ fun main() {
         )
     }
 
-    Files.createTempFile("aliases", ".csv").writeLines(
-        groups.entries.map { (listOf(it.key) + it.value).joinToString() }
+    File(dataDir, "aliases.csv").toPath().writeLines(
+        groups.entries.map { (listOf(it.key.name) + it.value.map(Tag::name)).joinToString() }
     ).also { println(it.absolutePathString()) }
 }

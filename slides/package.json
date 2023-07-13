@@ -1,0 +1,13 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "remarker",
+    "build": "remarker build"
+  },
+  "dependencies": {
+    "remarker": "^1.15.0"
+  }
+}
