@@ -1,7 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.io.FilenameFilter
 
 plugins {
-    kotlin("jvm") version "1.7.20"
+    kotlin("jvm") version "1.8.21"
 }
 
 group = "org.example"
@@ -13,6 +14,7 @@ repositories {
 
 dependencies {
     implementation("org.postgresql:postgresql:42.6.0")
+    implementation("org.apache.commons:commons-text:1.10.0")
 
     testImplementation(kotlin("test"))
 }
@@ -23,4 +25,8 @@ tasks.test {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+tasks.register<DiagramGenerationTask>("generateDiagrams") {
+    destinationDirectory.set(File(projectDir, "diagrams"))
 }

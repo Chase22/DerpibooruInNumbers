@@ -12,7 +12,7 @@ val connection by lazy {
 fun ResultSet.toMapSequence() = generateSequence {
     if (!next()) return@generateSequence null
 
-    (0..metaData.columnCount).associate {
+    (1..metaData.columnCount).associate {
         metaData.getColumnName(it) to getObject(it)
     }
 }
