@@ -1,0 +1,7 @@
+assets:
+  - img
+cssFiles:
+  - slides.css
+
+remarkConfig:
+  countIncrementalSlides: false

@@ -1,0 +1,59 @@
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 2px 4px;
+}
+
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.image40 img{
+    width: 40%;
+    height: auto;
+}
+
+.image50 img{
+    width: 50%;
+    height: auto;
+}
+
+.image60 img{
+    width: 60%;
+    height: auto;
+}
+
+.image450px img{
+    width: auto;
+    height: 450px;
+}
+
+.image80 img{
+    width: 80%;
+    height: auto;
+}
+
+.image100 img{
+    width: 100%;
+    height: auto;
+}
+
+/* Two-column layouts */
+.left-column  { width: 49%; float: left; }
+.right-column { width: 49%; float: right; }
+
+.left-column-33  { width: 33%; float: left; }
+.right-column-66 { width: 66%; float: right; }
+
+.left-column-66  { width: 66%; float: left; }
+.right-column-33 { width: 33%; float: right; }
+
+.right-column ~ p { clear: both; }
+.right-column ~ ul { clear: both; }
