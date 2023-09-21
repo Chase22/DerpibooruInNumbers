@@ -35,28 +35,6 @@ class: middle, center
 
 .center[.image80[![derpibooru-front](img/derpibooru_front.png)]]
 
-[//]: # (---)
-
-[//]: # ()
-
-[//]: # (# A small but needed disclaimer)
-
-[//]: # ()
-
-[//]: # (### I do not endorse derpibooru)
-
-[//]: # ()
-
-[//]: # (- provides easy access to metadata via database dumps)
-
-[//]: # (- to my knowledge the biggest collection of mlp images)
-
-[//]: # (- Shrouded in various controversies)
-
-[//]: # (- Just use manebooru.art instead)
-
-[//]: # (- This is a fun statistics and history project)
-
 ---
 
 # About datascience
