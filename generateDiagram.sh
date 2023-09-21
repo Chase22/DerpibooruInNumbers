@@ -1,0 +1,1 @@
+npx --yes -p @mermaid-js/mermaid-cli mmdc -i diagrams/$1.mmd -o slides/img/diagrams/$1.svg

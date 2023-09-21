@@ -23,6 +23,12 @@ https://derpibooru.org/1151299
 
 https://derpibooru.org/489980
 
+Source: http://404
+https://derpibooru.org/images/348189
+
+Source: http://# google images mashup. most leading to 404s. strawberryreef is ok.
+https://derpibooru.org/images/466016
+
 ## Tags
 - artist:champ has 17 aliases
 - tags with most aliases

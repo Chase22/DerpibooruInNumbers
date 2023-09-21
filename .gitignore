@@ -43,4 +43,5 @@ bin/
 
 derpibooru_public_dump*.pgdump
 
-diagrams/
+/diagrams/
+imageCache

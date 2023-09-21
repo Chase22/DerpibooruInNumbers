@@ -6,13 +6,19 @@ class: middle, center
 
 ---
 
+# Content Warning
+
+.center[**This panel contains mention of not safe for work content and themes, as well as mild swearing**]
+
+---
+
 # About me
 
 .left-column[
 
 - Brony since 2013
 - Furry since... later
-- From Cologne
+- Hailing from Cologne
 - Software Engineer
 - Working with Android
 - Wanna-Be Datascientist
@@ -29,17 +35,35 @@ class: middle, center
 
 .center[.image80[![derpibooru-front](img/derpibooru_front.png)]]
 
+[//]: # (---)
+
+[//]: # ()
+
+[//]: # (# A small but needed disclaimer)
+
+[//]: # ()
+
+[//]: # (### I do not endorse derpibooru)
+
+[//]: # ()
+
+[//]: # (- provides easy access to metadata via database dumps)
+
+[//]: # (- to my knowledge the biggest collection of mlp images)
+
+[//]: # (- Shrouded in various controversies)
+
+[//]: # (- Just use manebooru.art instead)
+
+[//]: # (- This is a fun statistics and history project)
+
 ---
 
-# A small but needed disclaimer
+# About datascience
 
-### I do not endorse derpibooru
-
-- provides easy access to metadata via database dumps
-- to my knowledge the biggest collection of mlp images
-- Shrouded in various controversies
-- Just use manebooru.art instead
-- This is a fun statistics and history project
+- Gathering knowledge from datasets
+- Closely related to computer science and statistics
+- Found knowledge used to predict future events
 
 ---
 
@@ -52,6 +76,9 @@ class: middle, center
 # Option One
 
 ## Do it manually
+
+???
+In derpiboorus footer find the Statistics
 
 --
 .center[.image80[![derpibooru footer](img/derpibooru_footer.png)]]
@@ -98,6 +125,7 @@ count: false
 .image100[![dump download](img/download_dump.png)]
 
 ???
+
 - Just download it
 - And set up a database
 - and import everything
@@ -199,6 +227,7 @@ order by count desc;
 | 155 | sprout cloverleaf | 2.313  |
 
 ---
+
 # Talking about tags
 
 .image100[![tag_section](img/tag-explanation/tag_section.png)]
@@ -206,30 +235,35 @@ order by count desc;
 ???
 The image tag section. Relates similar picture for searching
 ---
+
 # Talking about tags
 
 .image100[![tag_section](img/tag-explanation/tag_section_rating.png)]
 ???
 Rating shows whether or not a picture is sfw
 ---
+
 # Talking about tags
 
 .image100[![tag_section](img/tag-explanation/tag_section_artist.png)]
 ???
 Artist
 ---
+
 # Talking about tags
 
 .image100[![tag_section](img/tag-explanation/tag_section_character.png)]
 ???
 Character
 ---
+
 # Talking about tags
 
 .image100[![tag_section](img/tag-explanation/tag_section_species.png)]
 ???
 Species
 ---
+
 # Talking about tags
 
 .image100[![tag_section](img/tag-explanation/tag_section_rest.png)]
@@ -237,141 +271,280 @@ Species
 All of the rest like colouring, pose, specifics about the characters, number of characters, asscociated meme
 
 ---
+
+# Talking about tags
+
+.image100[![tag_section](img/tag-explanation/tag_section_color.png)]
+
+---
+
 # Most used tags
 
 .left-column[
 
-| #   | name                   | count     |
-|:----|:-----------------------|:----------|
-| 1   | safe                   | 2,240,831 |
-| 2   | female                 | 1,733,555 |
-| 3   | pony                   | 1,453,306 |
-| 4   | solo                   | 1,420,231 |
-| 5   | oc                     | 945,168   |
-| 6   | oc only                | 679,532   |
-| 7   | mare                   | 676,629   |
-| 8   | clothes                | 627,939   |
-| 9   | simple background      | 566,333   |
-| 10  | nudity                 | 518,003   |
+| #   | name              | count     |
+|:----|:------------------|:----------|
+| 1   | safe              | 2,240,831 |
+| 2   | female            | 1,733,555 |
+| 3   | pony              | 1,453,306 |
+| 4   | solo              | 1,420,231 |
+| 5   | oc                | 945,168   |
+| 6   | oc only           | 679,532   |
+| 7   | mare              | 676,629   |
+| 8   | clothes           | 627,939   |
+| 9   | simple background | 566,333   |
+| 10  | nudity            | 518,003   |
 
 ]
 
 .right-column[
 
-| #   | name                   | count     |
-|:----|:-----------------------|:----------|
-| 11  | male                   | 511,549   |
-| 12  | unicorn                | 499,016   |
-| 13  | pegasus                | 454,320   |
-| 14  | earth pony             | 404,475   |
-| 15  | twilight sparkle       | 382,305   |
-| 16  | smiling                | 374,632   |
-| 17  | anthro                 | 363,840   |
-| 18  | alicorn                | 305,071   |
-| 19  | rainbow dash           | 296,114   |
-| 20  | screencap              | 290,528   |
+| #   | name             | count   |
+|:----|:-----------------|:--------|
+| 11  | male             | 511,549 |
+| 12  | unicorn          | 499,016 |
+| 13  | pegasus          | 454,320 |
+| 14  | earth pony       | 404,475 |
+| 15  | twilight sparkle | 382,305 |
+| 16  | smiling          | 374,632 |
+| 17  | anthro           | 363,840 |
+| 18  | alicorn          | 305,071 |
+| 19  | rainbow dash     | 296,114 |
+| 20  | screencap        | 290,528 |
 
 ]
 
 ---
-# Body Types
+count:false
+
+# Most used tags
+
+.left-column[
+
+| #   | name              | count     |
+|:----|:------------------|:----------|
+| 1   | safe              | 2,240,831 |
+| 2   | **female**        | 1,733,555 |
+| 3   | pony              | 1,453,306 |
+| 4   | solo              | 1,420,231 |
+| 5   | oc                | 945,168   |
+| 6   | oc only           | 679,532   |
+| 7   | mare              | 676,629   |
+| 8   | clothes           | 627,939   |
+| 9   | simple background | 566,333   |
+| 10  | nudity            | 518,003   |
+
+]
+
+.right-column[
+
+| #   | name             | count   |
+|:----|:-----------------|:--------|
+| 11  | **male**         | 511,549 |
+| 12  | unicorn          | 499,016 |
+| 13  | pegasus          | 454,320 |
+| 14  | earth pony       | 404,475 |
+| 15  | twilight sparkle | 382,305 |
+| 16  | smiling          | 374,632 |
+| 17  | anthro           | 363,840 |
+| 18  | alicorn          | 305,071 |
+| 19  | rainbow dash     | 296,114 |
+| 20  | screencap        | 290,528 |
+
+]
 
 ---
 count:false
+
+# Most used tags
+
+.left-column[
+
+| #   | name              | count     |
+|:----|:------------------|:----------|
+| 1   | safe              | 2,240,831 |
+| 2   | female            | 1,733,555 |
+| 3   | pony              | 1,453,306 |
+| 4   | solo              | 1,420,231 |
+| 5   | oc                | 945,168   |
+| 6   | oc only           | 679,532   |
+| 7   | mare              | 676,629   |
+| 8   | clothes           | 627,939   |
+| 9   | simple background | 566,333   |
+| 10  | nudity            | 518,003   |
+
+]
+
+.right-column[
+
+| #   | name             | count   |
+|:----|:-----------------|:--------|
+| 11  | male             | 511,549 |
+| 12  | **unicorn**      | 499,016 |
+| 13  | **pegasus**      | 454,320 |
+| 14  | **earth pony**   | 404,475 |
+| 15  | twilight sparkle | 382,305 |
+| 16  | smiling          | 374,632 |
+| 17  | anthro           | 363,840 |
+| 18  | alicorn          | 305,071 |
+| 19  | rainbow dash     | 296,114 |
+| 20  | screencap        | 290,528 |
+
+]
+
+---
+count:false
+
+# Most used tags
+
+.left-column[
+
+| #   | name              | count     |
+|:----|:------------------|:----------|
+| 1   | safe              | 2,240,831 |
+| 2   | female            | 1,733,555 |
+| 3   | pony              | 1,453,306 |
+| 4   | solo              | 1,420,231 |
+| 5   | oc                | 945,168   |
+| 6   | oc only           | 679,532   |
+| 7   | mare              | 676,629   |
+| 8   | **clothes**       | 627,939   |
+| 9   | simple background | 566,333   |
+| 10  | **nudity**        | 518,003   |
+
+]
+
+.right-column[
+
+| #   | name             | count   |
+|:----|:-----------------|:--------|
+| 11  | male             | 511,549 |
+| 12  | unicorn          | 499,016 |
+| 13  | pegasus          | 454,320 |
+| 14  | earth pony       | 404,475 |
+| 15  | twilight sparkle | 382,305 |
+| 16  | smiling          | 374,632 |
+| 17  | anthro           | 363,840 |
+| 18  | alicorn          | 305,071 |
+| 19  | rainbow dash     | 296,114 |
+| 20  | screencap        | 290,528 |
+
+]
+
+---
+
+# Body Types
+
+.center[.image100[![tag](img/body_types/body_type_tag.png)]]
+
+???
+
+- pony is not considered a body type
+- anthro is, but almost all other body types imply it
+
+---
+count:false
+
 # Body Types
 
 .left-column[
 
-| #   | name                    | count  |
-|:----|:------------------------|:-------|
-| 1   | unguligrade anthro      | 65,584 |
+| #   | name               | count  |
+|:----|:-------------------|:-------|
+| 1   | unguligrade anthro | 65,584 |
 
 ]
 
-.right-column[.image80[![unguligrade_anthro](img/body_types/unguligrade_anthro.png)]]
+.right-column[.image80[![unguligrade_anthro](http://localhost:8080/2862056)]]
 
 ???
 pony legs and hooves
 
 ---
 count:false
+
 # Body Types
 
 .left-column[
 
-| #   | name                    | count  |
-|:----|:------------------------|:-------|
-| 1   | unguligrade anthro      | 65,584 |
-| 2   | plantigrade anthro      | 48,277 |
+| #   | name               | count  |
+|:----|:-------------------|:-------|
+| 1   | unguligrade anthro | 65,584 |
+| 2   | plantigrade anthro | 48,277 |
 
 ]
 
-.right-column[.image80[![plantigrade_anthro](img/body_types/plantigrade_anthro.png)]]
+.right-column[.image80[![plantigrade_anthro](http://localhost:8080/3053619)]]
 
 ???
 hooman legs and hooman feet
 
 ---
 count:false
+
 # Body Types
+
 .center[.image60[![trying_to_find_plantigrade](img/body_types/trying_to_find_plantigrade.png)]]
 
 ---
 count:false
+
 # Body Types
 
 .left-column[
 
-| #   | name                    | count  |
-|:----|:------------------------|:-------|
-| 1   | unguligrade anthro      | 65,584 |
-| 2   | plantigrade anthro      | 48,277 |
-| 3   | semi-anthro             | 21,525 |
+| #   | name               | count  |
+|:----|:-------------------|:-------|
+| 1   | unguligrade anthro | 65,584 |
+| 2   | plantigrade anthro | 48,277 |
+| 3   | semi-anthro        | 21,525 |
 
 ]
 
-.right-column[.image60[![semi-anthro](img/body_types/semi-anthro.png)]]
+.right-column[.image60[![semi-anthro](http://localhost:8080/3072912)]]
 
 ???
 No human features
 
 ---
 count:false
+
 # Body Types
 
 .left-column[
 
-| #   | name                    | count  |
-|:----|:------------------------|:-------|
-| 1   | unguligrade anthro      | 65,584 |
-| 2   | plantigrade anthro      | 48,277 |
-| 3   | semi-anthro             | 21,525 |
-| 4   | digitigrade anthro      | 2,800  |
+| #   | name               | count  |
+|:----|:-------------------|:-------|
+| 1   | unguligrade anthro | 65,584 |
+| 2   | plantigrade anthro | 48,277 |
+| 3   | semi-anthro        | 21,525 |
+| 4   | digitigrade anthro | 2,800  |
 
 ]
 
-.right-column[.image80[![digitigrade_anthro](img/body_types/digitigrade_anthro.png)]]
+.right-column[.image80[![digitigrade_anthro](http://localhost:8080/1537357)]]
 
 ???
 Anthro walking on toes e.g cappa
 
 ---
 count:false
+
 # Body Types
 
 .left-column[
 
-| #   | name                    | count  |
-|:----|:------------------------|:-------|
-| 1   | unguligrade anthro      | 65,584 |
-| 2   | plantigrade anthro      | 48,277 |
-| 3   | semi-anthro             | 21,525 |
-| 4   | digitigrade anthro      | 2,800  |
-| 5   | taur                    | 1,973  |
+| #   | name               | count  |
+|:----|:-------------------|:-------|
+| 1   | unguligrade anthro | 65,584 |
+| 2   | plantigrade anthro | 48,277 |
+| 3   | semi-anthro        | 21,525 |
+| 4   | digitigrade anthro | 2,800  |
+| 5   | taur               | 1,973  |
 
 ]
 
-.right-column[.image80[![taur](img/body_types/taur.png)]]
+.right-column[.image80[![taur](http://localhost:8080/3113582)]]
 
 ???
 taurus e.g. tirek
@@ -379,45 +552,48 @@ taurus e.g. tirek
 
 ---
 count:false
+
 # Body Types
 
 .left-column[
 
-| #   | name                    | count  |
-|:----|:------------------------|:-------|
-| 1   | unguligrade anthro      | 65,584 |
-| 2   | plantigrade anthro      | 48,277 |
-| 3   | semi-anthro             | 21,525 |
-| 4   | digitigrade anthro      | 2,800  |
-| 5   | taur                    | 1,973  |
-| 6   | human head pony         | 145    |
+| #   | name               | count  |
+|:----|:-------------------|:-------|
+| 1   | unguligrade anthro | 65,584 |
+| 2   | plantigrade anthro | 48,277 |
+| 3   | semi-anthro        | 21,525 |
+| 4   | digitigrade anthro | 2,800  |
+| 5   | taur               | 1,973  |
+| 6   | human head pony    | 145    |
 
 ]
 
-.right-column[.image80[![taur](img/body_types/human_head_pony.png)]]
+.right-column[.image80[![human head pony](http://localhost:8080/1302801)]]
 
 ---
 count:false
+
 # Body Types
 
 .left-column[
 
-| #   | name                    | count  |
-|:----|:------------------------|:-------|
-| 1   | unguligrade anthro      | 65,584 |
-| 2   | plantigrade anthro      | 48,277 |
-| 3   | semi-anthro             | 21,525 |
-| 4   | digitigrade anthro      | 2,800  |
-| 5   | taur                    | 1,973  |
-| 6   | human head pony         | 145    |
-| 7   | two legged creature     | 75     |
+| #   | name                | count  |
+|:----|:--------------------|:-------|
+| 1   | unguligrade anthro  | 65,584 |
+| 2   | plantigrade anthro  | 48,277 |
+| 3   | semi-anthro         | 21,525 |
+| 4   | digitigrade anthro  | 2,800  |
+| 5   | taur                | 1,973  |
+| 6   | human head pony     | 145    |
+| 7   | two legged creature | 75     |
 
 ]
 
-.right-column[.image80[![taur](img/body_types/two_legged_creature.gif)]]
+.right-column[.image80[![two legged creature](http://localhost:8080/2764003)]]
 
 ---
 count:false
+
 # Body Types
 
 .left-column[
@@ -437,12 +613,14 @@ count:false
 
 ---
 count:false
+
 # Body Types
 
-.center[.image100[![pony_head_on_human_body](img/body_types/pony_head_on_human_body.png)]]
+.center[.image100[![pony_head_on_human_body](http://localhost:8080/2182358)]]
 
 ---
 count:false
+
 # Body Types
 
 .left-column[
@@ -461,7 +639,7 @@ count:false
 
 ]
 
-.right-column[.image80[![kemonomimi](img/body_types/kemonomimi.png)]]
+.right-column[.image80[![kemonomimi](http://localhost:8080/2492210)]]
 
 ???
 human with limited animal features
@@ -471,6 +649,7 @@ search site looks similar to plantigrade_anthro
 
 ---
 count:false
+
 # Body Types
 
 .left-column[
@@ -492,16 +671,19 @@ count:false
 
 ---
 count:false
+
 # Body Types
 
-.center[.image60[![probably_not_salmon.png](img/body_types/probably_not_salmon.png)]]
+.center[.image60[![probably_not_salmon](http://localhost:8080/2519722)]]
 
 ???
 Derpibooru description:
 but you can tell it’s not salmon… probably
 
 ---
+
 # Tags
+
 ## Most tagged image
 
 --
@@ -511,6 +693,7 @@ but you can tell it’s not salmon… probably
 count:false
 
 # Tags
+
 ## Most tagged image
 
 .center[.image80[![first](img/most_tagged_image/first.png)]]
@@ -519,6 +702,7 @@ count:false
 count:false
 
 # Tags
+
 ## Most tagged image
 
 .center[.image80[![second](img/most_tagged_image/second.png)]]
@@ -527,6 +711,7 @@ count:false
 count:false
 
 # Tags
+
 ## Most tagged image
 
 .center[.image80[![third](img/most_tagged_image/third.png)]]
@@ -538,38 +723,321 @@ Rule 5: Do not post forbidden content
 count:false
 
 # Tags
+
 ## Most tagged image
 
 .center[
-### 2231725
-]
 
+### 2231725
+
+]
+???
+It's a video that i do not want to show here
 
 ---
 count:false
 
 # Tags
+
 ## Most tagged image
 
-.center[.image80[![derpibooru-colab](https://derpicdn.net/img/2020/2/16/2276195/medium.png)]]
+.center[.image80[![derpibooru-colab](http://localhost:8080/2276195)]]
 
 ???
-Derpibooru Community Colab 2020
+Derpibooru Community Collab 2020
 
 ---
+
+# Tags
+
+## Percentiles
+
+.left-column[
+
+| Percentile | Count |
+|:-----------|:------|
+| **99.9%**  | 96    |
+| **99%**    | 58    |
+| **90%**    | 33    |
+| **75%**    | 23    |
+| **50%**    | 16    |
+
+]
+
+???
+99th percentile means 99% of images have 58 or less tags
+50% percentile is average
+
+--
+.right-column[
+
+- 2622 Image with over 100 tags
+- 0,083% of all images
+  ]
+
+---
+
 # Tag Edits
+
 ## 14,351
 
-![most edited tags](https://derpicdn.net/img/view/2021/10/30/2734957__safe_artist-colon-chrissythewarner_fluttershy_bat+pony_pony_bat+ponified_female_flutterbat_race+swap_simple+background_solo_transparent+background.png)
+.center[.image60[
+![most edited tags](http://localhost:8080/2734957)
 ]]
 
+???
+Rank 91
+
 ---
+
 # Tag Edits
+
 ## 75,260
+
 .center[.image80[![blocked_explicit.png](img/blocked_explicit.png)]]
 
 ---
+
 # Tag Edits
+
 ## But Why?
+
 - Average: 11 edits per Image
 - 99.91% of images have less than 100 edits
+- Probably targeted attacks by bots
+
+---
+
+# Tag aliases
+
+- Tags can basically rename each other
+
+.center[.image60[![zeppelin](img/diagrams/once+upon+a+zeppelin.svg)]]
+
+---
+count:false
+
+# Tag aliases
+
+- Tags can basically rename each other
+
+.center[.image30[![humor](img/diagrams/humor.svg)]]
+
+---
+count:false
+
+# Tag aliases
+
+- Tags can basically rename each other
+
+.center[.image80[![portal gun](img/diagrams/portal+gun.svg)]]
+
+---
+count:false
+
+# Tag aliases
+
+- Tags can basically rename each other
+
+.center[.image100[![wooden toaster](img/diagrams/oc-colon-wooden+toaster.svg)]]
+
+---
+count:false
+
+# Tag aliases
+
+- Tags can basically rename each other
+
+.center[.image60[![ohio](img/ohio.png)]]
+
+---
+count:false
+
+# Tag aliases
+
+- Tags can basically rename each other
+
+.center[.image60[![ohio](img/diagrams/ohio.svg)]]
+
+---
+count:false
+
+# Tag aliases
+
+- Tags can basically rename each other
+
+.center[.image100[![wtf](img/diagrams/wat.svg)]]
+
+---
+
+# Tag aliases
+
+## Most aliased tag
+
+---
+
+# Tag aliases
+
+## Most aliased tag
+
+- champ
+  .left[.image40[![champ](img/champ.png)]]
+
+---
+
+# Tag aliases
+
+## Most aliased tag
+
+- champ
+- rascalbones
+
+--
+
+- trash-prince
+
+---
+count:false
+
+# Tag aliases
+
+## Most aliased tag
+
+.left-column[
+
+- champ
+- rascalbones
+- trash-prince
+- renegade_rascal
+- rottenscoundrel
+- roadkilloutcast
+- roadkillreject
+- regal-trash-prince
+- royal-trash-prince
+- vilebastard
+  ]
+
+.right-column[
+
+- filthypony
+- trashprince
+- xroadkillx
+- roadkillbones
+- renegaderascal
+- roadkilljack
+- rottenroadkill
+- fantasticbastard
+  ]
+
+---
+
+# Tag aliases
+
+| tag                   | count |
+|:----------------------|:------|
+| artist:champ          | 17    |
+| your character here   | 16    |
+| reference sheet       | 16    |
+| spread wings          | 14    |
+| artist:grissaecrim    | 13    |
+| flat colors           | 13    |
+| artist:loyaldis       | 12    |
+| artist:dvixie         | 11    |
+| wat                   | 11    |
+| cel shading           | 10    |
+| the return of harmony | 10    |
+| artist:cosmalumi      | 10    |
+| tongue out            | 9     |
+
+---
+count:false
+
+# Tag aliases
+
+| tag                     | count |
+|:------------------------|:------|
+| artist:champ            | 17    |
+| **your character here** | 16    |
+| reference sheet         | 16    |
+| spread wings            | 14    |
+| artist:grissaecrim      | 13    |
+| flat colors             | 13    |
+| artist:loyaldis         | 12    |
+| artist:dvixie           | 11    |
+| wat                     | 11    |
+| cel shading             | 10    |
+| the return of harmony   | 10    |
+| artist:cosmalumi        | 10    |
+| tongue out              | 9     |
+
+---
+count:false
+
+# Tag aliases
+
+| tag                   | count |
+|:----------------------|:------|
+| artist:champ          | 17    |
+| your character here   | 16    |
+| reference sheet       | 16    |
+| **spread wings**      | 14    |
+| artist:grissaecrim    | 13    |
+| flat colors           | 13    |
+| artist:loyaldis       | 12    |
+| artist:dvixie         | 11    |
+| wat                   | 11    |
+| cel shading           | 10    |
+| the return of harmony | 10    |
+| artist:cosmalumi      | 10    |
+| tongue out            | 9     |
+
+---
+count:false
+
+# Tag aliases
+
+| tag                   | count |
+|:----------------------|:------|
+| artist:champ          | 17    |
+| your character here   | 16    |
+| reference sheet       | 16    |
+| spread wings          | 14    |
+| artist:grissaecrim    | 13    |
+| **flat colors**       | 13    |
+| artist:loyaldis       | 12    |
+| artist:dvixie         | 11    |
+| wat                   | 11    |
+| cel shading           | 10    |
+| the return of harmony | 10    |
+| artist:cosmalumi      | 10    |
+| tongue out            | 9     |
+
+---
+
+# Tag aliases
+
+| tag                   | count |
+|:----------------------|:------|
+| artist:champ          | 17    |
+| your character here   | 16    |
+| reference sheet       | 16    |
+| spread wings          | 14    |
+| artist:grissaecrim    | 13    |
+| flat colors           | 13    |
+| artist:loyaldis       | 12    |
+| artist:dvixie         | 11    |
+| **wat**               | 11    |
+| cel shading           | 10    |
+| the return of harmony | 10    |
+| artist:cosmalumi      | 10    |
+| tongue out            | 9     |
+
+---
+
+# Sources
+
+---
+
+# ImagesOverTime
+
+.center[.image100[![imagesOverTime](data/imagesOverDay.svg)]]

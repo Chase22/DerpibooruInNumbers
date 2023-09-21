@@ -1,5 +1,5 @@
-import jetbrains.datalore.plot.PlotHtmlExport
-import jetbrains.datalore.plot.PlotHtmlHelper
+import jetbrains.datalore.base.geometry.DoubleVector
+import jetbrains.datalore.plot.PlotSvgExport
 import org.jetbrains.letsPlot.geom.geomLine
 import org.jetbrains.letsPlot.ggsize
 import org.jetbrains.letsPlot.intern.toSpec
@@ -7,11 +7,9 @@ import org.jetbrains.letsPlot.label.ylab
 import org.jetbrains.letsPlot.letsPlot
 import org.jetbrains.letsPlot.scale.scaleXDateTime
 import org.jetbrains.letsPlot.tooltips.layerTooltips
-import java.nio.file.Files
+import java.io.File
 import java.sql.Timestamp
 import java.time.ZoneOffset
-import kotlin.io.path.absolutePathString
-import kotlin.io.path.writeText
 
 fun main() {
     val data = connection.createStatement().executeQuery("select * from images_by_month").toMapSequence().map {
@@ -28,7 +26,6 @@ fun main() {
             .format("date", "%B %Y")
     ) + ylab("count") + scaleXDateTime(format="%b %Y") + ggsize(2000, 1000)
 
-    val html = PlotHtmlExport.buildHtmlFromRawSpecs(graph.toSpec(), PlotHtmlHelper.scriptUrl("3.2.0"), iFrame = true)
-    val file = Files.createTempFile("plot", ".html").apply { writeText(html) }
-    ProcessBuilder("open", file.absolutePathString()).start().waitFor()
+    val svg = PlotSvgExport.buildSvgImageFromRawSpecs(graph.toSpec(), DoubleVector(1500.0, 1000.0))
+    File(dataDir, "imagesOverTime.svg").writeText(svg)
 }
