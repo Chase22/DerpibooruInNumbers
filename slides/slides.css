@@ -35,6 +35,11 @@ th, td {
     height: auto;
 }
 
+.image75 img{
+    width: 75%;
+    height: auto;
+}
+
 .image450px img{
     width: auto;
     height: 450px;

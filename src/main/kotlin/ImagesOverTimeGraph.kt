@@ -23,7 +23,8 @@ fun main() {
         )
     ) { x = "date"; y = "count"; } + geomLine(
         tooltips = layerTooltips()
-            .format("date", "%B %Y")
+            .format("date", "%B %Y"),
+        size = 5
     ) + ylab("count") + scaleXDateTime(format="%b %Y") + ggsize(2000, 1000)
 
     val svg = PlotSvgExport.buildSvgImageFromRawSpecs(graph.toSpec(), DoubleVector(1500.0, 1000.0))

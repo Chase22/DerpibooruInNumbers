@@ -10,6 +10,9 @@ class: middle, center
 
 .center[**This panel contains mention of not safe for work content and themes, as well as mild swearing**]
 
+???
+Questions are fine during the talk
+
 ---
 
 # About me
@@ -25,6 +28,13 @@ class: middle, center
   ]
   .right-column[.image100[![chase](img/Chase_JustRight.png)]]
 
+???
+Thanks to luna
+- she
+- pinged me a week ago
+- current "CEO" of derpibooru
+- provided some information and super secret statistics
+
 ---
 
 # About derpibooru
@@ -32,6 +42,21 @@ class: middle, center
 - Image sharing website (image booru)
 - First upload: 02.01.2012
 - Also includes forums and a commission page
+- Around 1.000.000 unique visitors a month
+- Over 100 TB of data transferred per month
+- majority of images served are png
+  - jpeg
+  - svg
+  - gif
+- Majority of users from the USA
+  - not so closely followed by Russia, China and the UK
+
+???
+- ratio png to jpeg -> 100%
+- ratio jpeg to svg -> 100%
+
+---
+# About derpibooru
 
 .center[.image80[![derpibooru-front](img/derpibooru_front.png)]]
 
@@ -74,6 +99,9 @@ In derpiboorus footer find the Statistics
 ## Pray to the API Gods
 
 `https://derpibooru.org/images/1449334`
+
+--
+
 `https://derpibooru.org/api/v1/json/images/1449334`
 
 ---
@@ -110,6 +138,7 @@ count: false
 - and fix errors
 - and fight docker on apple silicon
 - It took me about 4 hours
+- Data back from Mai 2023
 
 ---
 
@@ -205,6 +234,165 @@ order by count desc;
 | 155 | sprout cloverleaf | 2.313  |
 
 ---
+# Let's start at the start
+
+.center[.image60[![derpibooru_example](img/sections/derpibooruRawUpper.png)]]
+
+---
+# Let's start at the start
+
+.center[.image60[![derpibooru_example](img/sections/section1-header.png)]]
+
+???
+
+- Not much interesting
+- Maybe filters
+
+---
+
+# All the scores
+
+.center[.image60[![derpibooru_example](img/sections/section2-scores.png)]]
+
+---
+
+# Most Favourites
+
+--
+
+.center[.image100[![most_upvotes](img/blocked_explicit.png)]]
+
+---
+
+# 2nd Most Favourites
+
+--
+
+.center[.image100[![most_upvotes](img/blocked_explicit.png)]]
+
+---
+
+# 4th Most Favourites
+
+.center[.image100[![4th_most_upvotes](http://localhost:8080/232093)]]
+
+???
+marminatoror
+
+---
+
+# Most upvotes
+
+???
+Same as most favourites
+
+--
+
+.center[.image40[![4th_most_upvotes](http://localhost:8080/2972031)]]
+
+---
+
+# Most downvotes
+
+???
+- did not want to show this
+
+--
+
+.center[.image100[![most_downvotes](http://localhost:8080/186436)]]
+
+???
+- dynamic pose
+- op is a duck
+- duckery in the source
+- op is trying to start shit
+- op started shit
+- pure unfiltered evil
+- what the fuck did you just bring upon this cursed land
+
+---
+# Most controversial image
+- score (upvotes - downvotes) close to 0
+- absolute number of votes as high as possible
+
+--
+- surprisingly united
+
+???
+Mostly unpopular kinks or gore
+
+--
+.center[.image75[![chart](img/chart_controversial.png)]]
+
+---
+# Metadata
+
+.center[.image60[![section_metadata](img/sections/section3-metadata.png)]]
+
+---
+
+# ImagesOverTime
+
+.center[.image100[![imagesOverTime](data/imagesOverTime.svg)]]
+
+---
+
+# ImagesOverTime
+
+.center[.image100[![imagesOverTime](data/imagesOverDay.svg)]]
+
+---
+
+# Smallest Picture
+
+--
+
+.center[.image75[![smallest_picture](img/smallest_picture.png)]]
+
+???
+- 5x5 pixel
+- 89 Bytes
+
+---
+
+# Smallest Picture
+
+.center[.image50[![smallest_picture](img/smallest_picture_scaled.gif)]]
+
+---
+# Biggest Picture
+- No Videos or Animations
+- Largest by Filesize
+
+???
+- 101,331,051 bytes
+- 4670x6000
+
+---
+
+# Biggest Picture
+
+.center[.image50[![smallest_picture](img/blocked_semi_grimdark.png)]]
+
+---
+
+# Biggest Picture
+.center[.image450px[![biggest](http://localhost:8080/1623600)]]
+
+???
+-96,97 mb
+- 18000x12000
+
+---
+
+# Biggest Picture
+.center[.image450px[![biggest](http://localhost:8080/809935)]]
+
+???
+- 1,464,800,000 pixels
+- "all pictures of big mac must be BIG!!!"
+
+---
 
 # Talking about tags
 
@@ -218,7 +406,7 @@ The image tag section. Relates similar picture for searching
 
 .image100[![tag_section](img/tag-explanation/tag_section_rating.png)]
 ???
-Rating shows whether or not a picture is sfw
+Rating shows whether a picture is sfw
 ---
 
 # Talking about tags
@@ -858,8 +1046,10 @@ count:false
 
 ## Most aliased tag
 
+.left-column[
 - champ
-  .left[.image40[![champ](img/champ.png)]]
+]
+.right-column[.image40[![champ](img/champ.png)]]
 
 ---
 
@@ -867,12 +1057,22 @@ count:false
 
 ## Most aliased tag
 
+.left-column[
 - champ
 - rascalbones
+]
 
---
+---
 
+# Tag aliases
+
+## Most aliased tag
+
+.left-column[
+- champ
+- rascalbones
 - trash-prince
+]
 
 ---
 count:false
@@ -880,9 +1080,7 @@ count:false
 # Tag aliases
 
 ## Most aliased tag
-
 .left-column[
-
 - champ
 - rascalbones
 - trash-prince
@@ -1012,10 +1210,13 @@ count:false
 
 ---
 
-# Sources
+# Thank you for listening
 
----
-
-# ImagesOverTime
-
-.center[.image100[![imagesOverTime](data/imagesOverDay.svg)]]
+.left-column[
+- telegram: @Chase_22
+- web: chasenet.neocities.org
+- mastodon: @Chase@chaos.social
+]
+.right-column[
+  .image75[![qrCode](img/telegramQr.jpg)]
+]
