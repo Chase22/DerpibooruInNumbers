@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "start": "remarker",
-    "build": "remarker build"
+    "build": "remarker build",
+    "export": "decktape remark http://localhost:6275/#1 ../slides-export.pdf"
   },
   "dependencies": {
+    "decktape": "^3.10.0",
     "remarker": "^1.15.0"
   }
 }
