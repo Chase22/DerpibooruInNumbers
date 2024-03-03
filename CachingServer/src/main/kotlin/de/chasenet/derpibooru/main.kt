@@ -15,7 +15,10 @@ import java.net.URL
 private val cachingDir = File("imageCache").also { it.mkdirs() }
 
 private val logger = KotlinLogging.logger {}
-private val json = Json { ignoreUnknownKeys = true }
+val json = Json {
+    ignoreUnknownKeys = true
+
+}
 
 fun main() {
     Javalin.create().get("/{id}") { ctx ->
@@ -55,7 +58,7 @@ private fun getFromDerpibooru(id: Long): Pair<File, String>? {
     val file = File(cachingDir, "$id.${image.mimeType!!.replace('/', '_')}.${image.format}")
 
     file.delete()
-    URL(image.viewUrl!!).openStream().copyTo(file.outputStream())
+    URL(image.representations["large"]!!).openStream().copyTo(file.outputStream())
     logger.info { "Getting image from derpibooru for id $id" }
     return file to image.mimeType
 }
@@ -67,8 +70,11 @@ data class DerpibooruResponse(
 
 @Serializable
 data class DerpibooruImage(
-    @SerialName("name") val name: String?,
-    @SerialName("view_url") val viewUrl: String?,
-    @SerialName("mime_type") val mimeType: String?,
-    @SerialName("format") val format: String?
+    @SerialName("name") val name: String? = null,
+    @SerialName("view_url") val viewUrl: String? = null,
+    @SerialName("mime_type") val mimeType: String? = null,
+    @SerialName("format") val format: String? = null,
+    @SerialName("duplicate_of") val duplicateOf: Int? = null,
+    @SerialName("deletion_reason") val deletionReason: String? = null,
+    @SerialName("representations") val representations: Map<String, String> = emptyMap()
 )
