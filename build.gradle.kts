@@ -1,7 +1,5 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    kotlin("jvm") version "1.8.21"
+    kotlin("jvm") version "1.9.22"
 }
 
 group = "org.example"
@@ -24,10 +22,6 @@ tasks.test {
     useJUnitPlatform()
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
-}
-
-tasks.register<DiagramGenerationTask>("generateDiagrams") {
-    destinationDirectory.set(File(projectDir, "diagrams"))
+kotlin {
+    jvmToolchain(17)
 }
