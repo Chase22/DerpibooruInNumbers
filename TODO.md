@@ -1,0 +1,5 @@
+- [ ] Automatically download and apply newest data dump
+- [ ] Create script to automatically start slides and caching server
+- [ ] Update Readme.md
+- [ ] Export presentation as html, replacing all cached images with image files
+- [ ] Upload slides to github pages

@@ -32,3 +32,4 @@ https://derpibooru.org/images/466016
 ## Tags
 - artist:champ has 17 aliases
 - tags with most aliases
+- 162647 hundreds of users filter this tag

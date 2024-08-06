@@ -1,1 +1,0 @@
-pg_restore -O -v -d derpibooru derpibooru_public_dump_2023_05_29.pgdump

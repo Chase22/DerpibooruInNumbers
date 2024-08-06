@@ -7,12 +7,24 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./derpibooru_public_dump_2023_05_29.pgdump:/derpibooru_public_dump_2023_05_29.pgdump
-      - ./restore.sh:/docker-entrypoint-initdb.d/restore.sh
+      - ./postgres/postgres.conf:/etc/postgresql/postgresql.conf
+      - ./postgres/derpibooru_public_dump_2024_03_03.pgdump:/derpibooru_public_dump.pgdump
+      - ./postgres/restore.sh:/docker-entrypoint-initdb.d/restore.sh
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: derpibooru
       POSTGRES_DB: derpibooru
+    command: "postgres -c 'config_file=/etc/postgresql/postgresql.conf'"
+
+  flyway:
+    platform: linux/amd64
+    image: redgate/flyway
+    depends_on:
+     - db
+    volumes:
+      - ./postgres/flyway/conf:/flyway/conf
+      - ./postgres/flyway/sql:/flyway/sql
+    command: migrate
 
 volumes:
   postgres_data: { }
